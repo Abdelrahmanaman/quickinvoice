@@ -1,0 +1,11 @@
+-- Your SQL goes here
+CREATE TABLE users (
+    id UUID PRIMARY KEY,
+    first_name VARCHAR NOT NULL,
+    last_name VARCHAR NOT NULL,
+    email VARCHAR UNIQUE NOT NULL,
+    password_hash VARCHAR NOT NULL,
+    api_key VARCHAR,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

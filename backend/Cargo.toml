@@ -1,0 +1,23 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4"
+actix-web-httpauth = "0.8.2"
+bcrypt = "0.16.0"
+chrono = { version = "0.4.39", features = ["serde"] }
+diesel = { version = "2.2.0", features = ["postgres", "r2d2", "serde_json","uuid", "chrono", "numeric"] }
+dotenv = "0.15"
+jsonwebtoken = "9.3.0"
+serde = { version = "1.0.216", features = ["derive"] }
+tokio = { version = "1.42.0", features = ["full"] }
+uuid = { version = "1.11.0", features = ["v4", "serde"] }
+serde_json = "1.0"
+redis = "0.27.6"
+time = "0.3.37"
+env_logger = "0.10"
+log = "0.4"
+rust_decimal = {version = "1.36.0",  features = ["db-diesel-postgres"]}
+rust_decimal_macros = "1.36.0"
