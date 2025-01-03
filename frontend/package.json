@@ -8,15 +8,21 @@
     "start": "vinxi start"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0-beta.8",
     "@types/bun": "latest",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
-    "@vitejs/plugin-react": "^4.3.4"
+    "@vitejs/plugin-react": "^4.3.4",
+    "postcss": "^8.4.49",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "tailwindcss": "^4.0.0-beta.8"
   },
   "peerDependencies": {
     "typescript": "^5.7.2"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.7",
     "@tanstack/react-router": "^1.92.1",
     "@tanstack/start": "^1.92.2",
     "react": "^19.0.0",
